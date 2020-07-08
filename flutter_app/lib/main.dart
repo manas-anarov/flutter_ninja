@@ -17,7 +17,17 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[600],
       ),
       body: Center(
-        child: Image.asset('assets/1.jpg'),
+        child: IconButton(
+          onPressed: () {
+            print('you clicked me');
+          },
+          icon: Icon(
+            Icons.mail
+          ),
+          color: Colors.amber,
+          //child: Text('salam'),
+          //color: Colors.lightBlue
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
